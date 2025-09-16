@@ -1,5 +1,5 @@
 {
-  "name": "PostgreSQL",
+  "name": "postgres",
   "version": "0.1.0",
   "description": "Connect to PostgreSQL",
   "mcpServers": {

@@ -9,21 +9,17 @@ This Gemini CLI extension provides a set of tools to interact with [PostgreSQL](
 *   **Explore Database Schema:** List databases, tables, views, and schemas.
 *   **Query your Database:** Execute SQL queries against your database.
 
-## Supported Tools
-
-* list-tables: Use this tool to list tables and descriptions.
-* execute-sql: Use this tool to execute any SQL statement.
-
 ## Prerequisites
 
 Before you begin, ensure you have the following:
 
 *   [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed.
 *   A running PostgreSQL instance.
+*   User are granted database-level permissions to execute queries.
 
 ## Installation
 
-To install the extension, use the `gemini extensions install` command:
+To install the extension, use the command:
 
 ```bash
 gemini extensions install github.com/gemini-cli-extensions/postgresql.git
@@ -43,11 +39,11 @@ gemini extensions install github.com/gemini-cli-extensions/postgresql.git
 * Explore Schemas and Data
 * Generate code
 
+## Supported Tools
+
+* `list_tables`: Use this tool to list tables and descriptions.
+* `execute_sql`: Use this tool to execute any SQL statement.
 
 ## Security
 
 This extension executes commands against your PostgreSQL database. Always review the generated SQL queries before execution, especially for write operations.
-
-## Disclaimer
-
-This is not an officially supported Google product. This extension is under active development, and breaking changes may be introduced.
