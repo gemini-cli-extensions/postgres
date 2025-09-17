@@ -1,7 +1,7 @@
 {
   "name": "postgres",
   "version": "0.1.0",
-  "description": "Connect to PostgreSQL",
+  "description": "Connect and interact with a PostgreSQL database and data",
   "mcpServers": {
     "PostgreSQL": {
       "command": "${extensionPath}${/}toolbox",
