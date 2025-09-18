@@ -17,7 +17,7 @@ name: Package and Upload Release Assets
 # Global variables
 env:
   PACKAGE_NAME: "postgres"
-  FILES_TO_PACKAGE: "gemini-extension.json POSTGRES.md LICENSE"
+  FILES_TO_PACKAGE: "gemini-extension.json POSTGRESQL.md LICENSE"
   GCS_BUCKET_URL: "https://storage.googleapis.com/genai-toolbox/geminicli"
 
 on:
