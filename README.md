@@ -48,8 +48,17 @@ Interact with Postgres using natural language right from your IDE:
 
 ## Supported Tools
 
-* `list_tables`: Lists tables in the database.
-* `execute_sql`: Executes a SQL query.
+ * `list_tables`: Use this tool to lists tables in the database.
+ * `execute_sql`: Use this tool to executes a SQL query.
+ * `list_active_queries`: Use this tool to list currently running queries.
+ * `list_available_extensions`: Use this tool to list available extensions for installation.
+ * `list_installed_extensions`: Use this tool to list installed extensions.
+ * `get_query_plan`: Use this tool to get query plan.
+ * `list_autovacuum_configurations`: Use this tool to list autovacuum configurations and its value.
+ * `list_memory_configuration`s: Use this tool to list memory configurations and its value.
+ * `list_top_bloated_tables`: Use this tool to list top bloated tables.
+ * `list_replication_slots`: Use this tool to list replication slots.
+ * `list_invalid_indexes`: Use this tool to list invalid indexes.
 
 ## Additional Extensions
 
