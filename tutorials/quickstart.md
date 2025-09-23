@@ -1,14 +1,6 @@
-# Quickstart: Using the Generic PostgreSQL Extension
+# Quickstart: Using the PostgreSQL Extension
 
 Gemini CLI includes a pre-built extension for connecting to any PostgreSQL database, allowing you to query and manage your database using natural language.
-
-This guide covers how to activate and configure this extension. To learn more, go to https://github.com/gemini-cli-extensions/postgres.
-
-## Installation
-
-```bash
-gemini extensions install github.com/gemini-cli-extensions/postgres.git
-```
 
 ## Prerequisites
 
@@ -22,6 +14,20 @@ gemini extensions install github.com/gemini-cli-extensions/postgres.git
 1. Create or reuse [a database
    user](https://cloud.google.com/alloydb/omni/current/docs/database-users/manage-users)
    and have the username and password ready.
+
+### Installation
+
+1. Install the latest [Gemini CLI](https://github.com/google-gemini/gemini-cli):
+
+    ```bash
+    npm install -g @google/gemini-cli@latest
+    ```
+
+1. Install the extension:
+
+    ```bash
+    gemini extensions install github.com/gemini-cli-extensions/postgres.git
+    ```
 
 ## Configuration
 
