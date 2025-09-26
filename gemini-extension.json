@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Connect and interact with a PostgreSQL database and data",
   "mcpServers": {
-    "PostgreSQL": {
+    "postgresql": {
       "command": "${extensionPath}${/}toolbox",
       "args": [
         "--prebuilt",
