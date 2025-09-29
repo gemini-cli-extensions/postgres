@@ -6,6 +6,10 @@ software delivery cycle.
 
 # Setup
 
+## Required Gemini CLI Version
+
+To install this extension, the Gemini CLI version must be v0.6.0 or above. The version can be found by running: `gemini --version`.
+
 ## PostgreSQL MCP Server (Data Plane: Connecting and Querying)
 
 This section covers connecting to a PostgreSQL database instance.
