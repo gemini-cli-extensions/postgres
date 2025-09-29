@@ -1,6 +1,6 @@
 {
   "name": "postgres",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Connect and interact with a PostgreSQL database and data",
   "mcpServers": {
     "PostgreSQL": {
