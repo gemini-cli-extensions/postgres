@@ -20,8 +20,15 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Debug PR Title
+        run: echo "The PR title is: ${{github.event.pull_request.title}}"
+
       - name: Install Dependencies
         run: npm install @commitlint/config-conventional
+
       - uses: JulienKode/pull-request-name-linter-action@v20.1.0
