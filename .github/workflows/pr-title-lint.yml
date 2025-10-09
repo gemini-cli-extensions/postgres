@@ -1,8 +1,6 @@
 name: PR Linter
-
 on:
   pull_request:
-    # Run on these specific PR activities
     types: [opened, edited, reopened, synchronize]
 
 jobs:
@@ -12,6 +10,9 @@ jobs:
       pull-requests: read
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Debug PR Title
+        run: echo "The PR title is: ${{ github.event.pull_request.title }}"
 
       - name: Install Dependencies
         run: npm install @commitlint/config-conventional
