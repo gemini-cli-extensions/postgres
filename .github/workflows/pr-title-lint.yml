@@ -6,5 +6,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: JulienKode/pull-request-name-linter-action@v0.5.0
+      - uses: actions/checkout@50fbc622fc4ef5163becd7fab6573eac35f8462e # v1
+      - uses: JulienKode/pull-request-name-linter-action@8c05fb989d9f156ce61e33754f9802c9d3cffa58 # v0.5.0
