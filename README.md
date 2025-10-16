@@ -43,11 +43,13 @@ gemini extensions install https://github.com/gemini-cli-extensions/postgres
 
 Set the following environment variables before starting the Gemini CLI. These variables can be loaded from a `.env` file.
 
-* `POSTGRES_HOST`: The hostname or IP address of the PostgreSQL server.
-* `POSTGRES_PORT`: The port number of the PostgreSQL server.
-* `POSTGRES_DATABASE`: The name of the database to connect to.
-* `POSTGRES_USER`: The username for authentication.
-* `POSTGRES_PASSWORD`: The password for authentication.
+```bash
+export POSTGRES_HOST="<your-postgres-host>"
+export POSTGRES_PORT="<your-postgres-port>"
+export POSTGRES_DATABASE="<your-database-name>"
+export POSTGRES_USER="<your-database-user>"
+export POSTGRES_PASSWORD="<your-database-password>"
+```
 
 ### Start Gemini CLI
 
