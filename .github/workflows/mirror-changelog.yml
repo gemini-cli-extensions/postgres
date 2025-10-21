@@ -20,7 +20,7 @@ on:
 
 jobs:
   add-release-notes:
-    if: github.actor == 'renovate[bot]' && startsWith(github.head_ref, 'renovate/googleapis-genai-toolbox')
+    if: github.actor == 'renovate-bot' && startsWith(github.head_ref, 'renovate/googleapis-genai-toolbox')
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -95,7 +95,7 @@ jobs:
                 
                 // Include if it doesn't have a prefix OR it has any of the required keywords
                 if (!hasPrefix || hasAnyRequiredKeyword) {
-                  newChangelog.push(`- ${currentType}: ${originalContent}`);
+                  newChangelog.push(`${currentType}: ${originalContent}`);
                 } else {
                   console.log(`Filtering out: ${originalContent}`);
                 }
