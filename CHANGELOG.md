@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.4](https://github.com/gemini-cli-extensions/postgres/compare/0.1.3...0.1.4) (2025-12-01)
+
+
+### Features
+
+* **tools/postgres:** Add `long_running_transactions`, `list_locks` and `replication_stats` tools ([genai-toolbox#​1751](https://redirect.github.com/googleapis/genai-toolbox/issues/1751)) ([5abad5d](https://redirect.github.com/googleapis/genai-toolbox/commit/5abad5d56c6cc5ba86adc5253b948bf8230fa830)) ([159f7d5](https://github.com/gemini-cli-extensions/postgres/commit/159f7d50673345dcec96903e90a8fd9d6383582f))
+
+
+### Bug Fixes
+
+* **tools:** Check for query execution error for pgxpool.Pool ([genai-toolbox#​1969](https://redirect.github.com/googleapis/genai-toolbox/issues/1969)) ([2bff138](https://redirect.github.com/googleapis/genai-toolbox/commit/2bff1384a3570ef46bc03ebebc507923af261987)) ([159f7d5](https://github.com/gemini-cli-extensions/postgres/commit/159f7d50673345dcec96903e90a8fd9d6383582f))
+
 ## [0.1.3](https://github.com/gemini-cli-extensions/postgres/compare/0.1.2...0.1.3) (2025-11-18)
 
 
