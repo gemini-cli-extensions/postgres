@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.5](https://github.com/gemini-cli-extensions/postgres/compare/0.1.4...0.1.5) (2025-12-08)
+
+
+### Features
+
+* **tools/postgres-list-publication-tables:** Add new postgres-list-publication-tables tool ([genai-toolbox#​1919](https://redirect.github.com/googleapis/genai-toolbox/issues/1919)) ([f4b1f0a](https://redirect.github.com/googleapis/genai-toolbox/commit/f4b1f0a68000ca2fc0325f55a1905705417c38a2)) ([2c3714e](https://github.com/gemini-cli-extensions/postgres/commit/2c3714ed3868e8264b8d1a41bd23261d781fa260))
+* **tools/postgres-list-tablespaces:** Add new postgres-list-tablespaces tool ([genai-toolbox#​1934](https://redirect.github.com/googleapis/genai-toolbox/issues/1934)) ([5ad7c61](https://redirect.github.com/googleapis/genai-toolbox/commit/5ad7c6127b3e47504fc4afda0b7f3de1dff78b8b)) ([2c3714e](https://github.com/gemini-cli-extensions/postgres/commit/2c3714ed3868e8264b8d1a41bd23261d781fa260))
+* **tools/postgres:** Add list-query-stats and get-column-cardinality functions ([genai-toolbox#​1976](https://redirect.github.com/googleapis/genai-toolbox/issues/1976)) ([9f76026](https://redirect.github.com/googleapis/genai-toolbox/commit/9f760269253a8cc92a357e995c6993ccc4a0fb7b)) ([2c3714e](https://github.com/gemini-cli-extensions/postgres/commit/2c3714ed3868e8264b8d1a41bd23261d781fa260))
+
 ## [0.1.4](https://github.com/gemini-cli-extensions/postgres/compare/0.1.3...0.1.4) (2025-12-01)
 
 
