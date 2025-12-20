@@ -27,7 +27,7 @@ Before you begin, ensure you have the following:
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed with version **+v0.6.0**.
 * Setup Gemini CLI [Authentication](https://github.com/google-gemini/gemini-cli/tree/main?tab=readme-ov-file#-authentication-options).
 * A running PostgreSQL instance.
-* User are granted database-level permissions to execute queries.
+* Users are granted database-level permissions to execute queries.
 
 ## Getting Started
 
@@ -78,8 +78,8 @@ Interact with Postgres using natural language right from your IDE:
 
 ## Supported Tools
 
- * `list_tables`: Use this tool to lists tables in the database.
- * `execute_sql`: Use this tool to executes a SQL query.
+ * `list_tables`: Use this tool to list tables in the database.
+ * `execute_sql`: Use this tool to execute a SQL query.
  * `list_active_queries`: Use this tool to list currently running queries.
  * `list_available_extensions`: Use this tool to list available extensions for installation.
  * `list_installed_extensions`: Use this tool to list installed extensions.
