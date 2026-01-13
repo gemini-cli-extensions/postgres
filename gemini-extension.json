@@ -9,15 +9,40 @@
         "--prebuilt",
         "postgres",
         "--stdio"
-      ],
-      "env": {
-        "POSTGRES_HOST": "${POSTGRES_HOST}",
-        "POSTGRES_PORT": "${POSTGRES_PORT}",
-        "POSTGRES_DATABASE": "${POSTGRES_DATABASE}",
-        "POSTGRES_USER": "${POSTGRES_USER}",
-        "POSTGRES_PASSWORD": "${POSTGRES_PASSWORD}"
-      }
+      ]
     }
   },
-  "contextFileName": "POSTGRESQL.md"
+  "contextFileName": "POSTGRESQL.md",
+  "settings": [
+    {
+      "name": "Host",
+      "description": "Host or IP address of the PostgreSQL server",
+      "envVar": "POSTGRES_HOST"
+    },
+    {
+      "name": "Port",
+      "description": "Port number of the PostgreSQL server",
+      "envVar": "POSTGRES_PORT"
+    },
+    {
+      "name": "Database Name",
+      "description": "Name of the database",
+      "envVar": "POSTGRES_DATABASE"
+    },
+    {
+      "name": "User",
+      "description": "Username of the database user",
+      "envVar": "POSTGRES_USER"
+    },
+    {
+      "name": "Password",
+      "description": "Password of the database user",
+      "envVar": "POSTGRES_PASSWORD"
+    },
+    {
+      "name": "Query Params",
+      "description": "(Optional) Raw query to be added to the db connection string",
+      "envVar": "POSTGRES_QUERY_PARAMS"
+    }
+  ]
 }
