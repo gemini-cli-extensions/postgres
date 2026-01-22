@@ -25,7 +25,7 @@
       "envVar": "POSTGRES_PORT"
     },
     {
-      "name": "Database Name",
+      "name": "Database",
       "description": "Name of the database",
       "envVar": "POSTGRES_DATABASE"
     },
@@ -37,7 +37,8 @@
     {
       "name": "Password",
       "description": "Password of the database user",
-      "envVar": "POSTGRES_PASSWORD"
+      "envVar": "POSTGRES_PASSWORD",
+      "sensitive": true
     },
     {
       "name": "Query Params",
