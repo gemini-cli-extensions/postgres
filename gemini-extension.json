@@ -42,7 +42,7 @@
     },
     {
       "name": "Query Params",
-      "description": "(Optional) Raw query to be added to the db connection string",
+      "description": "(Optional) Connection String Parameters",
       "envVar": "POSTGRES_QUERY_PARAMS"
     }
   ]
