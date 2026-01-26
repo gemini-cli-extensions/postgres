@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.2.0](https://github.com/gemini-cli-extensions/postgres/compare/0.1.5...0.2.0) (2026-01-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* Validate tool naming ([genai-toolbox#​2305](https://redirect.github.com/googleapis/genai-toolbox/issues/2305)) ([5054212](https://redirect.github.com/googleapis/genai-toolbox/commit/5054212fa43017207fe83275d27b9fbab96e8ab5))
+
+### Features
+
+* **prebuilt/cloud-sql:** Add create backup tool for Cloud SQL ([genai-toolbox#​2141](https://redirect.github.com/googleapis/genai-toolbox/issues/2141)) ([8e0fb03](https://redirect.github.com/googleapis/genai-toolbox/commit/8e0fb0348315a80f63cb47b3c7204869482448f4)) ([515afdc](https://github.com/gemini-cli-extensions/postgres/commit/515afdcdbaad85fe7fd89162d3c0c080d38e8a18))
+* **prebuilt/cloud-sql:** Add restore backup tool for Cloud SQL ([genai-toolbox#​2171](https://redirect.github.com/googleapis/genai-toolbox/issues/2171)) ([00c3e6d](https://redirect.github.com/googleapis/genai-toolbox/commit/00c3e6d8cba54e2ab6cb271c7e6b378895df53e1)) ([515afdc](https://github.com/gemini-cli-extensions/postgres/commit/515afdcdbaad85fe7fd89162d3c0c080d38e8a18))
+* **tools/postgres:** Add additional filter params for existing postgres tools ([genai-toolbox#​2033](https://redirect.github.com/googleapis/genai-toolbox/issues/2033)) ([489117d](https://redirect.github.com/googleapis/genai-toolbox/commit/489117d74711ac9260e7547163ca463eb45eeaa2)) ([328dca4](https://github.com/gemini-cli-extensions/postgres/commit/328dca4b1a632c5bc5f6d3bd67862574b8f8c426))
+* **tools/postgres:** Add list\_pg\_settings, list\_database\_stats tools for postgres ([genai-toolbox#​2030](https://redirect.github.com/googleapis/genai-toolbox/issues/2030)) ([32367a4](https://redirect.github.com/googleapis/genai-toolbox/commit/32367a472fae9653fed7f126428eba0252978bd5)) ([328dca4](https://github.com/gemini-cli-extensions/postgres/commit/328dca4b1a632c5bc5f6d3bd67862574b8f8c426))
+* **tools/postgres:** Add new postgres-list-roles tool ([genai-toolbox#​2038](https://redirect.github.com/googleapis/genai-toolbox/issues/2038)) ([bea9705](https://redirect.github.com/googleapis/genai-toolbox/commit/bea97054502cfa236aa10e2ebc8ff58eb00ad035)) ([328dca4](https://github.com/gemini-cli-extensions/postgres/commit/328dca4b1a632c5bc5f6d3bd67862574b8f8c426))
+* **tools/postgressql:** Add Parameter `embeddedBy` config support ([genai-toolbox#​2151](https://redirect.github.com/googleapis/genai-toolbox/issues/2151)) ([17b70cc](https://redirect.github.com/googleapis/genai-toolbox/commit/17b70ccaa754d15bcc33a1a3ecb7e652520fa600)) ([328dca4](https://github.com/gemini-cli-extensions/postgres/commit/328dca4b1a632c5bc5f6d3bd67862574b8f8c426))
+* **tools/postgressql:** Add tool to list store procedure ([genai-toolbox#​2156](https://redirect.github.com/googleapis/genai-toolbox/issues/2156)) ([cf0fc51](https://redirect.github.com/googleapis/genai-toolbox/commit/cf0fc515b57d9b84770076f3c0c5597c4597ef62)) ([328dca4](https://github.com/gemini-cli-extensions/postgres/commit/328dca4b1a632c5bc5f6d3bd67862574b8f8c426))
+* Support MCP specs version 2025-11-25 ([genai-toolbox#​2303](https://redirect.github.com/googleapis/genai-toolbox/issues/2303)) ([4d23a3b](https://redirect.github.com/googleapis/genai-toolbox/commit/4d23a3bbf2797b1f7fe328aeb5789e778121da23)) ([515afdc](https://github.com/gemini-cli-extensions/postgres/commit/515afdcdbaad85fe7fd89162d3c0c080d38e8a18))
+* Validate tool naming ([genai-toolbox#​2305](https://redirect.github.com/googleapis/genai-toolbox/issues/2305)) ([5054212](https://redirect.github.com/googleapis/genai-toolbox/commit/5054212fa43017207fe83275d27b9fbab96e8ab5)) ([515afdc](https://github.com/gemini-cli-extensions/postgres/commit/515afdcdbaad85fe7fd89162d3c0c080d38e8a18))
+
+
+### Bug Fixes
+
+* List tables tools null fix ([genai-toolbox#​2107](https://redirect.github.com/googleapis/genai-toolbox/issues/2107)) ([2b45266](https://redirect.github.com/googleapis/genai-toolbox/commit/2b452665983154041d4cd0ed7d82532e4af682eb)) ([328dca4](https://github.com/gemini-cli-extensions/postgres/commit/328dca4b1a632c5bc5f6d3bd67862574b8f8c426))
+
 ## [0.1.5](https://github.com/gemini-cli-extensions/postgres/compare/0.1.4...0.1.5) (2025-12-08)
 
 
