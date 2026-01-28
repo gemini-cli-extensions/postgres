@@ -27,7 +27,7 @@ Before you begin, ensure you have the following:
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed with version **+v0.6.0**.
 * Setup Gemini CLI [Authentication](https://github.com/google-gemini/gemini-cli/tree/main?tab=readme-ov-file#-authentication-options).
 * A running PostgreSQL instance.
-* User are granted database-level permissions to execute queries.
+* Users are granted database-level permissions to execute queries.
 
 ## Getting Started
 
@@ -44,8 +44,8 @@ gemini extensions install https://github.com/gemini-cli-extensions/postgres
 Set the following environment variables before starting the Gemini CLI. These variables can be loaded from a `.env` file.
 
 ```bash
-export POSTGRES_HOST="<your-postgres-host>"
-export POSTGRES_PORT="<your-postgres-port>"
+export POSTGRES_HOST="<your-postgres-host>" # Optional: defaults to localhost
+export POSTGRES_PORT="<your-postgres-port>" # Optional: defaults to 5432
 export POSTGRES_DATABASE="<your-database-name>"
 export POSTGRES_USER="<your-database-user>"
 export POSTGRES_PASSWORD="<your-database-password>"
@@ -78,16 +78,27 @@ Interact with Postgres using natural language right from your IDE:
 
 ## Supported Tools
 
- * `list_tables`: Use this tool to lists tables in the database.
- * `execute_sql`: Use this tool to executes a SQL query.
+ * `list_tables`: Use this tool to list tables in the database.
+ * `database_overview`: Use this tool to fetches the current state of the PostgreSQL server.
+ * `execute_sql`: Use this tool to execute a SQL query.
  * `list_active_queries`: Use this tool to list currently running queries.
  * `list_available_extensions`: Use this tool to list available extensions for installation.
  * `list_installed_extensions`: Use this tool to list installed extensions.
  * `get_query_plan`: Use this tool to get query plan.
  * `list_autovacuum_configurations`: Use this tool to list autovacuum configurations and its value.
- * `list_memory_configuration`s: Use this tool to list memory configurations and its value.
- * `list_top_bloated_tables`: Use this tool to list top bloated tables.
+ * `list_database_stats`: Use this tool to lists the key performance and activity statistics for each database in the PostgreSQL server.
+ * `list_indexes`: Use this tool to list available user indexes in a PostgreSQL database.
+ * `list_memory_configurations`: Use this tool to list memory configurations and its value.
+ * `list_pg_settings`: Use this tool to list configuration parameters for the PostgreSQL server.
+ * `list_publication_tables`: Use this tool to list publication tables in a PostgreSQL database.
  * `list_replication_slots`: Use this tool to list replication slots.
+ * `list_roles`: Use this tool to lists all the user-created roles in PostgreSQL database.
+ * `list_schemas`: Use this tool to lists schemas in the database.
+ * `list_sequences`: Use this tool to list sequences in a PostgreSQL database.
+ * `list_tablespaces`: Use this tool to lists tablespaces in the database.
+ * `list_top_bloated_tables`: Use this tool to list top bloated tables.
+ * `list_triggers`: Use this tool to lists triggers in the database.
+ * `list_views`: Use this tool to lists views in the database from pg_views with a default limit of 50 rows.
  * `list_invalid_indexes`: Use this tool to list invalid indexes.
 
 ## Additional Extensions

@@ -25,7 +25,7 @@ This section covers connecting to a PostgreSQL database instance.
 2.  **Handle Missing Variables**: If a command fails with an error message containing a placeholder like `${POSTGRES_HOST}`, it signifies a missing environment variable. Inform the user which variable is missing and instruct them to set it.
 
 3.  **Handle Permission Errors**: If an operation fails due to permission, it is
-    likely that the user do not have the correct privileges on the PostgreSQL
+    likely that the user does not have the correct privileges on the PostgreSQL
     database. Database-level permissions (e.g., `SELECT`, `INSERT`) are required
     to execute queries.
 
@@ -53,7 +53,7 @@ Users may have set project environment variables:
  *   `POSTGRES_USER`: The username for authentication.
  *   `POSTGRES_PASSWORD`: The password for authentication.
 
-Instead of prompting the user for these values for specific tool calls, prompt the user to verify reuse a specific value.
+Instead of prompting the user for these values for specific tool calls, prompt the user to verify and reuse a specific value.
 Make sure to not use the environment variable name like `POSTGRES_HOST`, `${POSTGRES_HOST}`, or `$POSTGRES_HOST`. The value can be found by using command: `echo $POSTGRES_HOST`.
 
 ## Use Full Table Name Format "DATABASE_NAME.SCHEMA_NAME.TABLE_NAME"
