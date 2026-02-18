@@ -9,10 +9,10 @@ Gemini CLI includes a pre-built extension for connecting to any PostgreSQL datab
 1. Create or select a PostgreSQL instance.
 
     * [Install PostgreSQL locally](https://www.postgresql.org/download/)
-    * [Install AlloyDB Omni](https://cloud.google.com/alloydb/omni/current/docs/quickstart)
+    * [Install AlloyDB Omni](https://docs.cloud.google.com/alloydb/omni/containers/current/docs/quickstart)
 
 1. Create or reuse [a database
-   user](https://cloud.google.com/alloydb/omni/current/docs/database-users/manage-users)
+   user](https://docs.cloud.google.com/alloydb/omni/containers/current/docs/database-users/manage-users)
    and have the username and password ready.
 
 ### Installation
