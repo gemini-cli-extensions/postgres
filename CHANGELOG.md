@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/gemini-cli-extensions/postgres/compare/0.2.1...0.2.2) (2026-02-24)
+
+
+### Bug Fixes
+
+* remove broken keychain support for password ([#90](https://github.com/gemini-cli-extensions/postgres/issues/90)) ([239018f](https://github.com/gemini-cli-extensions/postgres/commit/239018f922890c729478868b9d24b672b889f47f))
+
 ## [0.2.1](https://github.com/gemini-cli-extensions/postgres/compare/0.2.0...0.2.1) (2026-01-30)
 
 
