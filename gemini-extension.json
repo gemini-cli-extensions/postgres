@@ -37,8 +37,7 @@
     {
       "name": "Password",
       "description": "Password of the database user",
-      "envVar": "POSTGRES_PASSWORD",
-      "sensitive": true
+      "envVar": "POSTGRES_PASSWORD"
     },
     {
       "name": "Query Params",
