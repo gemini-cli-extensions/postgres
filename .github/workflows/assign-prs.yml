@@ -28,6 +28,6 @@ jobs:
       - name: "Auto-assign PR"
         uses: pozil/auto-assign-issue@v2
         with:
-          assignees: dolphin1999,Myst9,isaurabhuttam,prernakakkar-google,trehanshakuntG
+          assignees: dolphin1999,isaurabhuttam,prernakakkar-google
           numOfAssignee: 1
           abortIfPreviousAssignees: true
