@@ -21,18 +21,20 @@
       pinDigests: true,
     },
     {
-      matchPackageNames: ['googleapis/mcp-toolbox'],
-      'semanticCommitType': 'feat'
+      matchPackageNames: ['@toolbox-sdk/server'],
+      // Group the toolbox update under a stable branch name (renovate/toolbox).
+      groupName: 'toolbox',
+      semanticCommitType: 'feat',
     }
   ],
   customManagers: [
     {
+      // Track the npm toolbox server pinned in the extension's MCP command.
       customType: "regex",
-      managerFilePatterns: ["/toolbox_version\\.txt$/"],
-      matchStrings: ["(?<currentValue>[\\d\\.]+)"],
-      datasourceTemplate: "github-releases",
-      packageNameTemplate: "googleapis/mcp-toolbox",
-      extractVersionTemplate: "^v(?<version>.*)$",
+      managerFilePatterns: ["/gemini-extension\\.json$/"],
+      matchStrings: ["@toolbox-sdk/server@(?<currentValue>[\\d\\.]+)"],
+      datasourceTemplate: "npm",
+      depNameTemplate: "@toolbox-sdk/server",
     }
   ]
 }

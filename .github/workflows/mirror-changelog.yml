@@ -20,7 +20,10 @@ on:
 
 jobs:
   add-release-notes:
-    if: github.actor == 'renovate-bot' && startsWith(github.head_ref, 'renovate/googleapis-mcp-toolbox')
+    # Renovate groups the npm toolbox update under groupName 'toolbox' (see
+    # renovate.json5), so its branch is renovate/toolbox. Release notes still come
+    # from googleapis/mcp-toolbox (same source repo), so the markers below are unchanged.
+    if: github.actor == 'renovate-bot' && startsWith(github.head_ref, 'renovate/toolbox')
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write

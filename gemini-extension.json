@@ -4,8 +4,10 @@
   "description": "Connect and interact with a PostgreSQL database and data",
   "mcpServers": {
     "postgresql": {
-      "command": "${extensionPath}${/}toolbox",
+      "command": "npx",
       "args": [
+        "-y",
+        "@toolbox-sdk/server@1.8.0",
         "--prebuilt",
         "postgres",
         "--stdio"
