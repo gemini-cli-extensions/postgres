@@ -1,0 +1,52 @@
+{
+  "name": "postgres",
+  "version": "0.2.2",
+  "description": "Connect and interact with a PostgreSQL database and data",
+  "author": {
+    "name": "Google LLC",
+    "email": "data-cloud-ai-integrations@google.com"
+  },
+  "repository": "https://github.com/gemini-cli-extensions/postgres",
+  "license": "Apache-2.0",
+  "extensions": {
+    "com.google.cloud.data.agent-plugins": {
+      "config": [
+        {
+          "key": "POSTGRES_HOST",
+          "title": "Host",
+          "description": "Host or IP address of the PostgreSQL server"
+        },
+        {
+          "key": "POSTGRES_PORT",
+          "title": "Port",
+          "description": "Port number of the PostgreSQL server"
+        },
+        {
+          "key": "POSTGRES_DATABASE",
+          "title": "Database",
+          "description": "Name of the database"
+        },
+        {
+          "key": "POSTGRES_USER",
+          "title": "User",
+          "description": "Username of the database user"
+        },
+        {
+          "key": "POSTGRES_PASSWORD",
+          "title": "Password",
+          "description": "Password of the database user",
+          "sensitive": true
+        },
+        {
+          "key": "POSTGRES_QUERY_PARAMS",
+          "title": "Query Params",
+          "description": "(Optional) Connection String Parameters"
+        }
+      ],
+      "gemini": {
+        "contextFileName": "POSTGRESQL.md",
+        "mcpServerName": "postgresql"
+      }
+    }
+  }
+}

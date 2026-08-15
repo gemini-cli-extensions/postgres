@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "postgresql": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@toolbox-sdk/server@1.8.0",
+        "--prebuilt",
+        "postgres",
+        "--stdio"
+      ],
+      "env_vars": [
+        "POSTGRES_HOST",
+        "POSTGRES_PORT",
+        "POSTGRES_DATABASE",
+        "POSTGRES_USER",
+        "POSTGRES_PASSWORD",
+        "POSTGRES_QUERY_PARAMS"
+      ]
+    }
+  }
+}

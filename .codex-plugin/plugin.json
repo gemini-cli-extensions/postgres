@@ -1,0 +1,12 @@
+{
+  "name": "postgres",
+  "version": "0.2.2",
+  "description": "Connect and interact with a PostgreSQL database and data",
+  "author": {
+    "name": "Google LLC",
+    "email": "data-cloud-ai-integrations@google.com"
+  },
+  "repository": "https://github.com/gemini-cli-extensions/postgres",
+  "license": "Apache-2.0",
+  "mcpServers": "./.codex-plugin/.mcp.json"
+}
