@@ -15,7 +15,8 @@
 name: Mirror Toolbox Changelog
 
 on:
-  pull_request:
+  # Fork Renovate PRs need a write token; safe (no PR-code checkout, API-only).
+  pull_request_target: # zizmor: ignore[dangerous-triggers]
     types: [opened, edited]
 
 jobs:
