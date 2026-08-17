@@ -12,16 +12,6 @@
     "com.google.cloud.data.agent-plugins": {
       "config": [
         {
-          "key": "POSTGRES_HOST",
-          "title": "Host",
-          "description": "Host or IP address of the PostgreSQL server"
-        },
-        {
-          "key": "POSTGRES_PORT",
-          "title": "Port",
-          "description": "Port number of the PostgreSQL server"
-        },
-        {
           "key": "POSTGRES_DATABASE",
           "title": "Database",
           "description": "Name of the database"
@@ -36,6 +26,16 @@
           "title": "Password",
           "description": "Password of the database user",
           "sensitive": true
+        },
+        {
+          "key": "POSTGRES_HOST",
+          "title": "Host",
+          "description": "Host or IP address of the PostgreSQL server"
+        },
+        {
+          "key": "POSTGRES_PORT",
+          "title": "Port",
+          "description": "Port number of the PostgreSQL server"
         },
         {
           "key": "POSTGRES_QUERY_PARAMS",

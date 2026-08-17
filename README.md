@@ -71,11 +71,11 @@ See [Configuration](#configuration) for how each harness supplies the connection
 
 The plugin connects to PostgreSQL using these settings:
 
-*   `POSTGRES_HOST`: (Optional) The Postgres host. Defaults to `localhost`.
-*   `POSTGRES_PORT`: (Optional) The Postgres port. Defaults to `5432`.
 *   `POSTGRES_DATABASE`: The name of the database to connect to.
 *   `POSTGRES_USER`: The database username.
 *   `POSTGRES_PASSWORD`: The password for the database user.
+*   `POSTGRES_HOST`: (Optional) The Postgres host. Defaults to `localhost`.
+*   `POSTGRES_PORT`: (Optional) The Postgres port. Defaults to `5432`.
 *   `POSTGRES_QUERY_PARAMS`: (Optional) Connection string parameters.
 
 How you supply them depends on the harness:
@@ -85,11 +85,11 @@ How you supply them depends on the harness:
 *   **Codex** and **Antigravity**: export the variables in your shell before starting:
 
 ```bash
-export POSTGRES_HOST="<your-postgres-host>"                    # Optional, defaults to localhost
-export POSTGRES_PORT="<your-postgres-port>"                    # Optional, defaults to 5432
 export POSTGRES_DATABASE="<your-database-name>"
 export POSTGRES_USER="<your-database-user>"
 export POSTGRES_PASSWORD="<your-database-password>"
+export POSTGRES_HOST="<your-postgres-host>"                    # Optional, defaults to localhost
+export POSTGRES_PORT="<your-postgres-port>"                    # Optional, defaults to 5432
 export POSTGRES_QUERY_PARAMS="<your-connection-string-params>" # Optional
 ```
 

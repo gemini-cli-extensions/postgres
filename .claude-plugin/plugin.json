@@ -9,18 +9,6 @@
   "repository": "https://github.com/gemini-cli-extensions/postgres",
   "license": "Apache-2.0",
   "userConfig": {
-    "postgres_host": {
-      "title": "Host",
-      "description": "Host or IP address of the PostgreSQL server",
-      "type": "string",
-      "sensitive": false
-    },
-    "postgres_port": {
-      "title": "Port",
-      "description": "Port number of the PostgreSQL server",
-      "type": "string",
-      "sensitive": false
-    },
     "postgres_database": {
       "title": "Database",
       "description": "Name of the database",
@@ -38,6 +26,18 @@
       "description": "Password of the database user",
       "type": "string",
       "sensitive": true
+    },
+    "postgres_host": {
+      "title": "Host",
+      "description": "Host or IP address of the PostgreSQL server",
+      "type": "string",
+      "sensitive": false
+    },
+    "postgres_port": {
+      "title": "Port",
+      "description": "Port number of the PostgreSQL server",
+      "type": "string",
+      "sensitive": false
     },
     "postgres_query_params": {
       "title": "Query Params",
@@ -57,11 +57,11 @@
         "--stdio"
       ],
       "env": {
-        "POSTGRES_HOST": "${user_config.postgres_host}",
-        "POSTGRES_PORT": "${user_config.postgres_port}",
         "POSTGRES_DATABASE": "${user_config.postgres_database}",
         "POSTGRES_USER": "${user_config.postgres_user}",
         "POSTGRES_PASSWORD": "${user_config.postgres_password}",
+        "POSTGRES_HOST": "${user_config.postgres_host}",
+        "POSTGRES_PORT": "${user_config.postgres_port}",
         "POSTGRES_QUERY_PARAMS": "${user_config.postgres_query_params}"
       }
     }

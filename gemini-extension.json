@@ -17,16 +17,6 @@
   "contextFileName": "POSTGRESQL.md",
   "settings": [
     {
-      "name": "Host",
-      "description": "Host or IP address of the PostgreSQL server",
-      "envVar": "POSTGRES_HOST"
-    },
-    {
-      "name": "Port",
-      "description": "Port number of the PostgreSQL server",
-      "envVar": "POSTGRES_PORT"
-    },
-    {
       "name": "Database",
       "description": "Name of the database",
       "envVar": "POSTGRES_DATABASE"
@@ -40,6 +30,16 @@
       "name": "Password",
       "description": "Password of the database user",
       "envVar": "POSTGRES_PASSWORD"
+    },
+    {
+      "name": "Host",
+      "description": "Host or IP address of the PostgreSQL server",
+      "envVar": "POSTGRES_HOST"
+    },
+    {
+      "name": "Port",
+      "description": "Port number of the PostgreSQL server",
+      "envVar": "POSTGRES_PORT"
     },
     {
       "name": "Query Params",
