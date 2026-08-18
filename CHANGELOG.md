@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.2.3](https://github.com/gemini-cli-extensions/postgres/compare/0.2.2...0.2.3) (2026-08-18)
+
+
+### Features
+
+* **groups:** Add ttlMs and cacheScope customization to config ([mcp-toolbox#​3805](https://redirect.github.com/googleapis/mcp-toolbox/issues/3805)) ([a5d4947](https://redirect.github.com/googleapis/mcp-toolbox/commit/a5d49472bad85e8955dc83852e65c5cd92f351a3)) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* **migrate:** Convert toolset to group kind during migration ([mcp-toolbox#​3704](https://redirect.github.com/googleapis/mcp-toolbox/issues/3704)) ([0adeaa5](https://redirect.github.com/googleapis/mcp-toolbox/commit/0adeaa51c4e132fe36553b24f88e8f62df90bfaa)) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* **server/mcp:** Introduce generic client extension registry ([mcp-toolbox#​3723](https://redirect.github.com/googleapis/mcp-toolbox/issues/3723)) ([016245c](https://redirect.github.com/googleapis/mcp-toolbox/commit/016245c21c254a05409a41845e0a8799518363a0)) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* **skill:** Add review-prs skill for mcp-toolbox ([mcp-toolbox#​3743](https://redirect.github.com/googleapis/mcp-toolbox/issues/3743)) ([5b7bacc](https://redirect.github.com/googleapis/mcp-toolbox/commit/5b7bacc73b9284160b73c4c3f7a53214c653e64a)) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* **tools:** Add cloud-sql-connect-gce for pg, mysql, mssql ([mcp-toolbox#​3740](https://redirect.github.com/googleapis/mcp-toolbox/issues/3740)) ([ca58fa4](https://redirect.github.com/googleapis/mcp-toolbox/commit/ca58fa4b525d6726b9792a9f6303fbcc26c9ca3f)) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* adopt Agent Plugin spec and generate harness manifests ([#105](https://github.com/gemini-cli-extensions/postgres/issues/105)) ([2a4523f](https://github.com/gemini-cli-extensions/postgres/commit/2a4523ffca894e80777703e403a71daa08d70fad))
+
+
+### Bug Fixes
+
+* **auth/mcp:** Derive PRM URL from Toolbox URL ([mcp-toolbox#​3765](https://redirect.github.com/googleapis/mcp-toolbox/issues/3765)) ([aa30842](https://redirect.github.com/googleapis/mcp-toolbox/commit/aa308422ad6dd73a014722c3ebf9628d7aa9cc8f)) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* **config:** Ignore environment variables in YAML comments ([mcp-toolbox#​3807](https://redirect.github.com/googleapis/mcp-toolbox/issues/3807)) ([79aa732](https://redirect.github.com/googleapis/mcp-toolbox/commit/79aa73247d35286e1cc4309883d539cf9a470686)), refs [mcp-toolbox#​3793](https://redirect.github.com/googleapis/mcp-toolbox/issues/3793) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* **mcp:** Return Tool execution error for invalid input param ([mcp-toolbox#​3799](https://redirect.github.com/googleapis/mcp-toolbox/issues/3799)) ([8120197](https://redirect.github.com/googleapis/mcp-toolbox/commit/81201978a7a1d2a786eb3707ddaa7b090dd1c454)) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* **prebuilt/cloud-storage:** Declare tool collections as groups ([mcp-toolbox#​3764](https://redirect.github.com/googleapis/mcp-toolbox/issues/3764)) ([7d468be](https://redirect.github.com/googleapis/mcp-toolbox/commit/7d468be107dfe476d77bd7f937b5dd9c61e5cdc8)) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* **server:** Avoid a nil-flusher panic in the SSE handler ([mcp-toolbox#​3520](https://redirect.github.com/googleapis/mcp-toolbox/issues/3520)) ([947f42f](https://redirect.github.com/googleapis/mcp-toolbox/commit/947f42f3e8a07362466566043045491d2318db29)) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* **server/mcp:** Disallow client overriding URL bound parameters ([mcp-toolbox#​3798](https://redirect.github.com/googleapis/mcp-toolbox/issues/3798)) ([f15a9c7](https://redirect.github.com/googleapis/mcp-toolbox/commit/f15a9c7082215bd8e9990395d01b5e4fa3b36c69)) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* **util:** Convert exponent-form JSON numbers in ConvertNumbers ([mcp-toolbox#​3730](https://redirect.github.com/googleapis/mcp-toolbox/issues/3730)) ([e9713ee](https://redirect.github.com/googleapis/mcp-toolbox/commit/e9713eec3acea912e0b6a254b845bd9da04f8192)) ([cff6189](https://github.com/gemini-cli-extensions/postgres/commit/cff6189277af65a009dd0918aa4c8e2d95fb2498))
+* **ci:** restore pull_request_target for mirror-changelog ([#109](https://github.com/gemini-cli-extensions/postgres/issues/109)) ([05b0618](https://github.com/gemini-cli-extensions/postgres/commit/05b0618de8e6c62f9aee2ae1c047c3f865697540))
+* treat database tool output as untrusted data in model context ([#102](https://github.com/gemini-cli-extensions/postgres/issues/102)) ([a98397a](https://github.com/gemini-cli-extensions/postgres/commit/a98397ad5a55fbd51cceb18f69f3b7ffbe42ce4d))
+
 ## [0.2.2](https://github.com/gemini-cli-extensions/postgres/compare/0.2.1...0.2.2) (2026-02-24)
 
 
