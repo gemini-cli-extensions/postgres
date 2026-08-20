@@ -29,9 +29,17 @@
   ],
   customManagers: [
     {
-      // Track the npm toolbox server pinned in the extension's MCP command.
+      // Track the npm toolbox server pinned in the MCP command. The version is
+      // listed in the source (mcp.json) and repeated in every generated
+      // manifest, so all of them are bumped in one PR.
       customType: "regex",
-      managerFilePatterns: ["/gemini-extension\\.json$/"],
+      managerFilePatterns: [
+        "/mcp\\.json$/",
+        "/mcp_config\\.json$/",
+        "/gemini-extension\\.json$/",
+        "/\\.claude-plugin/plugin\\.json$/",
+        "/\\.codex-plugin/\\.mcp\\.json$/",
+      ],
       matchStrings: ["@toolbox-sdk/server@(?<currentValue>[\\d\\.]+)"],
       datasourceTemplate: "npm",
       depNameTemplate: "@toolbox-sdk/server",
