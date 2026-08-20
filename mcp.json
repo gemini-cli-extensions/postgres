@@ -6,7 +6,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "@toolbox-sdk/server@1.8.0",
+        "@toolbox-sdk/server@1.9.0",
         "--prebuilt",
         "postgres",
         "--stdio"

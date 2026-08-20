@@ -1,6 +1,6 @@
 {
   "name": "postgres",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Connect and interact with a PostgreSQL database and data",
   "author": {
     "name": "Google LLC",
@@ -51,7 +51,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "@toolbox-sdk/server@1.8.0",
+        "@toolbox-sdk/server@1.9.0",
         "--prebuilt",
         "postgres",
         "--stdio"
