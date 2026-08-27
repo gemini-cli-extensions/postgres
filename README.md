@@ -27,7 +27,7 @@ Before you begin, ensure you have the following:
 * One of the supported agent harnesses, installed and authenticated:
   * [Gemini CLI](https://github.com/google-gemini/gemini-cli) (v0.6.0+)
   * [Claude Code](https://code.claude.com)
-  * [Codex](https://developers.openai.com/codex)
+  * [Codex](https://developers.openai.com/codex) (v0.150.0+)
   * [Antigravity CLI](https://antigravity.google)
 * [Node.js](https://nodejs.org/) (the MCP server runs via `npx`).
 * A running PostgreSQL instance.
