@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.2.4](https://github.com/gemini-cli-extensions/postgres/compare/0.2.3...0.2.4) (2026-08-31)
+
+
+### Features
+
+* **falkordb:** Add FalkorDB source and tools ([mcp-toolbox#​3692](https://redirect.github.com/googleapis/mcp-toolbox/issues/3692)) ([a94702c](https://redirect.github.com/googleapis/mcp-toolbox/commit/a94702c13121736e0ceb05425af43a0b953ac5b5)) ([bd37e21](https://github.com/gemini-cli-extensions/postgres/commit/bd37e21789c18dc9d5a7b67e36f558f1a366cebb))
+* **mcp:** Add Secure Parameters support as Toolbox experimental extension ([mcp-toolbox#​3394](https://redirect.github.com/googleapis/mcp-toolbox/issues/3394)) ([9750d2d](https://redirect.github.com/googleapis/mcp-toolbox/commit/9750d2da4b1dc08761ab2b5510454e1a386ebce8)) ([bd37e21](https://github.com/gemini-cli-extensions/postgres/commit/bd37e21789c18dc9d5a7b67e36f558f1a366cebb))
+* **server/mcp:** Support com.google.cloud/toolbox.v1 extension in v20260728 ([mcp-toolbox#​3801](https://redirect.github.com/googleapis/mcp-toolbox/issues/3801)) ([f4f7da6](https://redirect.github.com/googleapis/mcp-toolbox/commit/f4f7da605245ff9e8d491d0c55591ba3b400623b)) ([bd37e21](https://github.com/gemini-cli-extensions/postgres/commit/bd37e21789c18dc9d5a7b67e36f558f1a366cebb))
+* **skill:** Add fix-failing-tests skill for mcp-toolbox ([mcp-toolbox#​3821](https://redirect.github.com/googleapis/mcp-toolbox/issues/3821)) ([168e69c](https://redirect.github.com/googleapis/mcp-toolbox/commit/168e69c048d65aa15b926f9dd7680245949cc57a)) ([bd37e21](https://github.com/gemini-cli-extensions/postgres/commit/bd37e21789c18dc9d5a7b67e36f558f1a366cebb))
+* **sources:** Support native read-only mode and dynamic tool annotations ([mcp-toolbox#​3872](https://redirect.github.com/googleapis/mcp-toolbox/issues/3872)) ([c257022](https://redirect.github.com/googleapis/mcp-toolbox/commit/c257022fed2cc5e9a286bf9fd78e91d76f9ff3b8)), refs [mcp-toolbox#​3615](https://redirect.github.com/googleapis/mcp-toolbox/issues/3615) [mcp-toolbox#​3816](https://redirect.github.com/googleapis/mcp-toolbox/issues/3816) [mcp-toolbox#​3618](https://redirect.github.com/googleapis/mcp-toolbox/issues/3618) [mcp-toolbox#​3851](https://redirect.github.com/googleapis/mcp-toolbox/issues/3851) [mcp-toolbox#​3619](https://redirect.github.com/googleapis/mcp-toolbox/issues/3619) [mcp-toolbox#​3617](https://redirect.github.com/googleapis/mcp-toolbox/issues/3617) ([bd37e21](https://github.com/gemini-cli-extensions/postgres/commit/bd37e21789c18dc9d5a7b67e36f558f1a366cebb))
+* restore $schema in plugin.json for spec clients ([#112](https://github.com/gemini-cli-extensions/postgres/issues/112)) ([47fad85](https://github.com/gemini-cli-extensions/postgres/commit/47fad85b2afbe83420ad68b864c78686b91a8032))
+
+
+### Bug Fixes
+
+* **cloud-storage:** Resolve symlinks when enforcing local path boundaries ([mcp-toolbox#​3810](https://redirect.github.com/googleapis/mcp-toolbox/issues/3810)) ([c2ada64](https://redirect.github.com/googleapis/mcp-toolbox/commit/c2ada6421f718cb861c7ccd5f0e8cd7e841a407f)) ([bd37e21](https://github.com/gemini-cli-extensions/postgres/commit/bd37e21789c18dc9d5a7b67e36f558f1a366cebb))
+* **config:** Compare env var offsets in rune space when skipping comments ([mcp-toolbox#​3856](https://redirect.github.com/googleapis/mcp-toolbox/issues/3856)) ([2e76934](https://redirect.github.com/googleapis/mcp-toolbox/commit/2e769343332cf84084a162e23f556490faa20d32)) ([bd37e21](https://github.com/gemini-cli-extensions/postgres/commit/bd37e21789c18dc9d5a7b67e36f558f1a366cebb))
+* **postgres:** Filter background processes in postgres-list-active-queries ([mcp-toolbox#​3885](https://redirect.github.com/googleapis/mcp-toolbox/issues/3885)) ([3d9e62a](https://redirect.github.com/googleapis/mcp-toolbox/commit/3d9e62a979be951bb04aeaf31aa4505598031f4a)) ([bd37e21](https://github.com/gemini-cli-extensions/postgres/commit/bd37e21789c18dc9d5a7b67e36f558f1a366cebb))
+* Merge prebuilt tools when reloading custom config ([mcp-toolbox#​3864](https://redirect.github.com/googleapis/mcp-toolbox/issues/3864)) ([5a6d865](https://redirect.github.com/googleapis/mcp-toolbox/commit/5a6d865eff939ace8c803d3ce8831aa83d00a750)) ([bd37e21](https://github.com/gemini-cli-extensions/postgres/commit/bd37e21789c18dc9d5a7b67e36f558f1a366cebb))
+* Normalize postgres UUIDs to strings ([mcp-toolbox#​3806](https://redirect.github.com/googleapis/mcp-toolbox/issues/3806)) ([3b02f1d](https://redirect.github.com/googleapis/mcp-toolbox/commit/3b02f1d86ab774c1e0fb13d0de7b6b428da78b83)) ([bd37e21](https://github.com/gemini-cli-extensions/postgres/commit/bd37e21789c18dc9d5a7b67e36f558f1a366cebb))
+
 ## [0.2.3](https://github.com/gemini-cli-extensions/postgres/compare/0.2.2...0.2.3) (2026-08-18)
 
 
